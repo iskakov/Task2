@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		<h1>Cхема расположения участков сети</h1>
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				<div class="textleft">Наружние участки сети</div>
+				<div class="textright">Объект теплопотребления</div>
+				<div class="left">
+					<div class="block type_pipeline1">
+						<span class="number">987654321</span>
+						<span>Тип изоляции1</span>
+					</div>
+					<div class="block type_pipeline2">
+						<span class="number">987654321</span>
+						<span>Тип изоляции2</span>
+					</div>
+					<div class="block type_pipeline3">
+						<span class="number">987654321</span>
+						<span>Тип изоляции3</span>
+					</div>
+					<div class="block type_pipeline3">
+						<span class="number">987654321</span>
+						<span>Тип изоляции3</span>
+					</div>
+					<div class="block type_pipeline1">
+						<span class="number">987654321</span>
+						<span>Тип изоляции1</span>
+					</div>
+				</div>
+				<div class="right">
+					<div class="block type_pipeline2">
+						<span class="number">987654321</span>
+						<span>Тип изоляции2</span>
+					</div>
+					<div class="block type_pipeline2">
+						<span class="number">987654321</span>
+						<span>Тип изоляции2</span>
+					</div>
+					<div class="block type_pipeline1">
+						<span class="number">987654321</span>
+						<span>Тип изоляции1</span>
+					</div>
+					<div class="block type_pipeline3">
+						<span class="number">987654321</span>
+						<span>Тип изоляции3</span>
+					</div>
+					<div class="block type_pipeline3">
+						<span class="number">987654321</span>
+						<span>Тип изоляции3</span>
+					</div>
+					<div class="block type_pipeline3">
+						<span class="number">987654321</span>
+						<span>Тип изоляции3</span>
+					</div>
+					<div class="block type_pipeline2">
+						<span class="number">987654321</span>
+						<span>Тип изоляции2</span>
+					</div>
+				</div>
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+			<div class="title">Выберите участок сети</div>
+			<div class="blockinput">
+				<div class="block">
+					<span class="left">Выбран участок №:</span>
+					<span class="right">2</span>
+				</div>
+				<label for="year">Год прокладки трубопровода:</label>
+				<input type="text" id="year" placeholder="2020">
+				<label for="type_isolation">Тип изоляци:</label>
+				<select id="type_isolation">
+					<option>ППУ</option>
+					<option>ППМ</option>
+					<option>АПБ</option>
+					<option>Изоляция из пенополиэтилена</option>
+					<option>ВУС</option>
+				</select>
+				<label for="type_pipeline">Вид прокладки трубопровода:</label>
+				<select id="type_pipeline">
+					<option>Надземная</option>
+					<option>Подземная</option>
+					<option>По подвалу</option>
+				</select>
+				<input type="submit" value="Сохранить">
+			</div>
+			<div class="blocktext">
+				<div class="title">Основная информация</div>
+				<div class="block">
+					<span class="left">Наименование объекта:</span>
+					<span id="name_object" class="right"></span>
+				</div>
+				<div class="block">
+					<span class="left">Дата регистрации:</span>
+					<span id="date_registration" class="right"></span>
+				</div>
+				<div class="block">
+					<span class="left">Лицевой счет потребителя:</span>
+					<span id="consumer" class="right"></span>
+				</div>
+				<div class="block">
+					<span class="left">Улица:</span>
+					<span id="street" class="right"></span>
+				</div>
+				<div class="block">
+					<span class="left">Дом:</span>
+					<span id="number_building" class="right"></span>
+				</div>
+			</div>
+		</aside><!-- .left-sidebar -->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+</footer><!-- .footer -->
+
+</body>
+</html>
