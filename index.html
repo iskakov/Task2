@@ -34,11 +34,11 @@
 		</div><!-- .container-->
 
 		<aside class="left-sidebar">
-			<div class="title">Выберите участок сети</div>
-			<div class="blockinput">
+			<div id="empty_st" class="title">Выберите участок сети</div>
+			<div id="inform" class="blockinput">
 				<div class="block">
 					<span class="left">Выбран участок №:</span>
-					<span class="right">2</span>
+					<span id="number_section" class="right">2</span>
 				</div>
 				<label for="year">Год прокладки трубопровода:</label>
 				<input type="text" id="year" placeholder="2020">
@@ -56,31 +56,32 @@
 					<option>Подземная</option>
 					<option>По подвалу</option>
 				</select>
-				<input type="submit" value="Сохранить">
+				<input id="button_save" type="submit" value="Сохранить">
+				<div class="blocktext">
+					<div class="title">Основная информация</div>
+					<div class="block">
+						<span class="left">Наименование объекта:</span>
+						<span id="name_object" class="right"></span>
+					</div>
+					<div class="block">
+						<span class="left">Дата регистрации:</span>
+						<span id="date_registration" class="right"></span>
+					</div>
+					<div class="block">
+						<span class="left">Лицевой счет потребителя:</span>
+						<span id="consumer" class="right"></span>
+					</div>
+					<div class="block">
+						<span class="left">Улица:</span>
+						<span id="street" class="right"></span>
+					</div>
+					<div class="block">
+						<span class="left">Дом:</span>
+						<span id="number_building" class="right"></span>
+					</div>
+				</div>
 			</div>
-			<div class="blocktext">
-				<div class="title">Основная информация</div>
-				<div class="block">
-					<span class="left">Наименование объекта:</span>
-					<span id="name_object" class="right"></span>
-				</div>
-				<div class="block">
-					<span class="left">Дата регистрации:</span>
-					<span id="date_registration" class="right"></span>
-				</div>
-				<div class="block">
-					<span class="left">Лицевой счет потребителя:</span>
-					<span id="consumer" class="right"></span>
-				</div>
-				<div class="block">
-					<span class="left">Улица:</span>
-					<span id="street" class="right"></span>
-				</div>
-				<div class="block">
-					<span class="left">Дом:</span>
-					<span id="number_building" class="right"></span>
-				</div>
-			</div>
+			
 		</aside><!-- .left-sidebar -->
 
 	</div><!-- .middle-->
