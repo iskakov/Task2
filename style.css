@@ -72,7 +72,7 @@ body {
 	border: 1px solid #2b2b2b;
 	background: #dfdfdf;
 }
-.content .left .block {
+.content .left .ui-draggable {
 	float: left;
 	width: 105px;
 	height: 107px;
@@ -81,11 +81,11 @@ body {
 	border: 2px solid #2b2b2b;
 	background: #fff;
 }
-.content .left .block span{
+.content .left .ui-draggable span{
 	display: block;
 	text-align: center;
 }
-.content .left .block span.number{
+.content .left .ui-draggable span.number{
 	padding: 35px 0 0 0;
 }
 .content .left .type_pipeline1 {
@@ -94,7 +94,7 @@ body {
 .content .left .type_pipeline2 {
 	background: #90ff81;
 }
-.content .left .type_pipelin3 {
+.content .left .type_pipeline3 {
 	background: #819eff;
 }
 .content .right {
@@ -104,7 +104,7 @@ body {
 	border: 1px solid #0059ff;
 	background: #dfdfdf;
 }
-.content .right .block {
+.content .right .ui-draggable {
 	float: left;
 	width: 105px;
 	height: 107px;
@@ -113,11 +113,11 @@ body {
 	border: 2px solid #fff;
 	background: #fff;
 }
-.content .right .block span{
+.content .right .ui-draggable span{
 	display: block;
 	text-align: center;
 }
-.content .right .block span.number{
+.content .right .ui-draggable span.number{
 	padding: 35px 0 0 0;
 }
 .content .right .type_pipeline1 {
