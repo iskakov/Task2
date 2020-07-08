@@ -3,6 +3,7 @@ let type_isolations = ["ППУ", "ППМ", "АПБ", "Изоляция из пе
 let type_pipelines = ["Надземная","Подземная","По подвалу"];
 let networkSections = [];
 let localNetworkSections = [];
+$('#inform').hide();
 // генератор 
 function generate(){
     // localStorage.clear();
@@ -84,10 +85,40 @@ function makeNameObject(length) {
     }
     return result;
  }
+ 
 // обработка клика
+$('#button_save').on('click', function(event) {  
+  let obj = JSON.parse(currentItem.getAttribute('data-2'));
+  obj.year_pipeline =  Number.parseInt($('#year').val());
+  obj.type_isolation = type_isolations.indexOf($('#type_isolation').val());
+  obj.type_pipeline = type_pipelines.indexOf($('#type_pipeline').val());
+  let span = $(currentItem).children().eq(1).text($('#type_isolation').val());
+  $(currentItem).removeClass("type_pipeline1 type_pipeline2 type_pipeline3").addClass(obj.type_pipeline == 0 ? "type_pipeline1" :( obj.type_pipeline == 1 ? "type_pipeline2" : "type_pipeline3"));
+  $(currentItem).attr('data-2', JSON.stringify(obj))
+  Find_And_Save(obj);
+  $('#inform').hide();
+  $('#empty_st').show();
+});
 
-$('.ui-draggable').on('click', function(e) {  
-    alert(1);
+
+$('.ui-draggable').on('click', function(event) {
+  currentItem = this; 
+  let obj = JSON.parse(this.getAttribute('data-2'))
+  $('#number_section').text(obj.number);
+  $('#year').val(obj.year_pipeline);
+  $('#type_isolation').val(type_isolations[obj.type_isolation]);
+  $('#type_pipeline').val(type_pipelines[obj.type_pipeline]);
+
+
+  $('#name_object').text(obj.name_object);
+  $('#date_registration').text(obj.date_registration);
+  $('#consumer').text(obj.personal_account);
+  $('#street').text(obj.street);
+  $('#number_building').text(obj.building_number);
+
+  $('#inform').show();
+  $('#empty_st').hide();
+  
 });
 $(".ui-draggable").draggable({
   appendTo: "body",
